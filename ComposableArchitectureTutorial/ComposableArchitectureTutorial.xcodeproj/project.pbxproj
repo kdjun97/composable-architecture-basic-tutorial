@@ -47,6 +47,7 @@
 		B7D5DAFE2B5C038900C7357E /* ComposableArchitectureTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableArchitectureTutorialUITests.swift; sourceTree = "<group>"; };
 		B7D5DB002B5C038900C7357E /* ComposableArchitectureTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableArchitectureTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B7D5DB122B5C184400C7357E /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		B7D5DB142B5CF8A700C7357E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +99,7 @@
 		B7D5DAE22B5C038800C7357E /* ComposableArchitectureTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				B7D5DB142B5CF8A700C7357E /* Info.plist */,
 				B7D5DB112B5C182200C7357E /* Feature */,
 				B7D5DB102B5C181D00C7357E /* App */,
 				B7D5DAE72B5C038900C7357E /* Assets.xcassets */,
@@ -453,6 +455,7 @@
 				DEVELOPMENT_TEAM = 7Z8W92S6YL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComposableArchitectureTutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -482,6 +485,7 @@
 				DEVELOPMENT_TEAM = 7Z8W92S6YL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComposableArchitectureTutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

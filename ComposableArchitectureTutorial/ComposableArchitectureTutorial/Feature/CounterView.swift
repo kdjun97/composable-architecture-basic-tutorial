@@ -13,35 +13,69 @@ struct CounterView: View {
     
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
-            VStack {
-                Text("\(viewStore.counter)")
-                    .font(.largeTitle)
-                    .padding()
-                    .background(Color.black.opacity(0.1))
-                    .cornerRadius(10)
-                  HStack {
-                    Button{
-                        viewStore.send(.minusButtonTapped)
-                    } label: {
-                        Text("-")
+            ZStack {
+                VStack {
+                    Text("\(viewStore.counter)")
+                        .font(.largeTitle)
+                        .padding()
+                        .background(Color.black.opacity(0.1))
+                        .cornerRadius(10)
+                    HStack {
+                        Button{
+                            viewStore.send(.minusButtonTapped)
+                        } label: {
+                            Text("-")
+                        }
+                        .font(.largeTitle)
+                        .padding()
+                        .background(Color.black.opacity(0.1))
+                        .cornerRadius(10)
+                        
+                        Button{
+                            viewStore.send(.plusButtonTapped)
+                        } label: {
+                            Text("+")
+                        }
+                        .font(.largeTitle)
+                        .padding()
+                        .background(Color.black.opacity(0.1))
+                        .cornerRadius(10)
                     }
-                    .font(.largeTitle)
-                    .padding()
-                    .background(Color.black.opacity(0.1))
-                    .cornerRadius(10)
-                    
-                      Button{
-                        viewStore.send(.plusButtonTapped)
-                      } label: {
-                          Text("+")
-                      }
-                    .font(.largeTitle)
-                    .padding()
-                    .background(Color.black.opacity(0.1))
-                    .cornerRadius(10)
-                  }
+                    HStack {
+                        Button {
+                            viewStore.send(.factButtonTapped)
+                        } label : {
+                            Text("Fact")
+                        }
+                        .font(.largeTitle)
+                        .padding()
+                        .background(Color.black.opacity(0.1))
+                        .cornerRadius(10)
+                        Button {
+                            viewStore.send(.timerButtonTapped)
+                        } label : {
+                            Text(viewStore.isTimerStarted ? "Stop" : "Start")
+                        }
+                        .font(.largeTitle)
+                        .padding()
+                        .background(Color.black.opacity(0.1))
+                        .cornerRadius(10)
+                    }
+                    if let fact = viewStore.fact {
+                        if !viewStore.isLoading {
+                            Text(fact)
+                                .font(.largeTitle)
+                                .padding()
+                                .background(Color.black.opacity(0.1))
+                                .cornerRadius(10)
+                        }
+                    }
                 }
-            .padding()
+                .padding()
+                if viewStore.isLoading {
+                    ProgressView()
+                }
+            }
         }
     }
 }
