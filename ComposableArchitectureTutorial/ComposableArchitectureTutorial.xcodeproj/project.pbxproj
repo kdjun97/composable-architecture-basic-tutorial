@@ -16,6 +16,8 @@
 		B7D5DB012B5C038900C7357E /* ComposableArchitectureTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB002B5C038900C7357E /* ComposableArchitectureTutorialUITestsLaunchTests.swift */; };
 		B7D5DB0F2B5C045400C7357E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B7D5DB0E2B5C045400C7357E /* ComposableArchitecture */; };
 		B7D5DB132B5C184400C7357E /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB122B5C184400C7357E /* CounterFeature.swift */; };
+		B7D5DB162B5CFECD00C7357E /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB152B5CFECD00C7357E /* AppFeature.swift */; };
+		B7D5DB182B5D02C700C7357E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB172B5D02C700C7357E /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		B7D5DB002B5C038900C7357E /* ComposableArchitectureTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableArchitectureTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B7D5DB122B5C184400C7357E /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		B7D5DB142B5CF8A700C7357E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B7D5DB152B5CFECD00C7357E /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		B7D5DB172B5D02C700C7357E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				B7D5DAE32B5C038800C7357E /* ComposableArchitectureTutorialApp.swift */,
+				B7D5DB152B5CFECD00C7357E /* AppFeature.swift */,
+				B7D5DB172B5D02C700C7357E /* AppView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -286,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D5DB162B5CFECD00C7357E /* AppFeature.swift in Sources */,
 				B7D5DB132B5C184400C7357E /* CounterFeature.swift in Sources */,
 				B7D5DAE62B5C038800C7357E /* CounterView.swift in Sources */,
+				B7D5DB182B5D02C700C7357E /* AppView.swift in Sources */,
 				B7D5DAE42B5C038800C7357E /* ComposableArchitectureTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
